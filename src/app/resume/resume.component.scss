@@ -1,0 +1,45 @@
+.resume-container {
+    .left {
+        text-align: right;
+        border-right: #d2d2d2 1px solid;
+        h3 {
+            text-align: right;
+        }
+        .resume-description {
+            strong {
+                margin-left: 10px;
+            }
+        }
+    }
+    .right {
+        text-align: left;
+        h3 {
+            text-align: left;
+        }
+        .resume-description {
+            strong {
+                margin-right: 10px;
+            }
+        }
+    }
+    .year {
+        font-style: italic;
+        font-weight: bold;
+        display: inline-block;
+        padding: 0 10px;
+        margin-bottom: 15px;
+    }
+    .resume-item {
+        margin-bottom: 40px;
+    }
+    .resume-description {
+        font-style: italic;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        strong {
+            font-style: normal;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}

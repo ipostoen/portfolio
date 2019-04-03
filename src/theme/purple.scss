@@ -1,0 +1,54 @@
+body { color: #222; }
+
+a { color: #9818d8; }
+
+p { color: #888; }
+  
+body .s-footer, .s-about li { color: #888; }
+section h3 {
+    letter-spacing: 3px;
+    color: #888; 
+}
+
+.bg-color { background-color: #9818d8; }
+.bg-dark {
+    background-color: #222;
+    color: #fff;
+    a { color: #fff; }
+}
+.bd-light { background-color: #FAFAFA; }
+
+.color-element { color: #9818d8; }
+
+.s-description { letter-spacing: 3px; }
+.s-description::after { background-color: #222; }
+
+// .s-about { color: #9818d8; padding: 50px; }
+
+// .s-contact { color: #9818d4; }
+.contact-icon { color: #9818d8; }
+
+.s-footer a { color: #9818d8; }
+.s-footer a:hover { color: #8017b4; }
+
+.person a { color: #9818d8; }
+.person a:hover { color: #8017b4; }
+
+
+.social-wrap a { color: #9818d8; }
+.social-wrap a:hover { color: #8017b4; }
+
+.year { background-color: #8238A7; color: #fff; }
+
+form input:focus,
+form textarea:focus {
+  border: 3px solid #8238A7; }
+form input,
+form textarea {
+  letter-spacing: 2px; }
+form button {
+  background-color: #8238A7;
+  letter-spacing: 2px; }
+form .form-group {
+  letter-spacing: 1px;
+  color: #888; }

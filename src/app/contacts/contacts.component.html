@@ -1,0 +1,79 @@
+<section id="s-contact" class="s-contact bg-light">
+  <div class="s-header">
+    <h2>Контакты</h2>
+    <div class="s-description-wrap">
+      <div class="s-description">
+        Оставте ваше сообщение
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-mg-3 col-sm-3 text-center align-self-center contact-inf">
+        <ul class="list-unstyled">
+          <li>
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <p>Киев</p>
+          </li>
+          <li>
+            <i class="fas fa-phone contact-icon"></i>
+            <p>+ 380 73 101 98 93</p>
+          </li>
+          <li>
+            <i class="far fa-envelope contact-icon"></i>
+            <p>iliyalevkiev@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-mg-9 col-sm-9">
+
+        <form [formGroup]="contactForm" class="form-wrap" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-md-6">
+              <label class="form-group" [class.alert]="f.name.invalid && (f.name.dirty || f.name.touched)">
+                <span class="color-element">*</span>Ваше имя:
+                <input type="text" formControlName="name" class="form-control" required>
+                <div *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)">
+                  <span class="alert" *ngIf="f.name.errors.required">Поле пустое</span>
+                  <span class="alert" *ngIf="f.name.errors.minlength">Имя должно содержать от 3 символов</span>
+                </div>
+              </label>
+            </div>
+            <div class="col-md-6">
+              <label class="form-group" [class.alert]="f.email.invalid && (f.email.dirty || f.email.touched)">
+                <span class="color-element">*</span>Ваш E-mail:
+                <input type="email" formControlName="email" class="form-control" required>
+                <div *ngIf="f.email.invalid && (f.email.dirty || f.email.touched)">
+                  <span class="alert" *ngIf="f.email.errors.required">Поле пустое</span>
+                  <span class="alert" *ngIf="f.email.errors.email">E-mail не прошел проверку</span>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label class="form-group">
+                <span class="color-element"></span>Ваша тема:
+                <input type="text" formControlName="subject" class="form-control">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label class="form-group" [class.alert]="f.message.invalid && (f.message.touched || f.message.dirty)">
+                <span class="color-element">*</span>Ваше сообщение:
+                <textarea formControlName="message" class="form-control" required></textarea>
+                <div *ngIf="f.message.invalid && (f.message.dirty || f.message.touched)">
+                  <span class="alert" *ngIf="f.message.errors.required">Поле пустое</span>
+                  <span class="alert" *ngIf="f.message.errors.minlength">Сообщение должно содержать от 10 символов</span>
+                </div>
+              </label>
+            </div>
+          </div>
+          <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>

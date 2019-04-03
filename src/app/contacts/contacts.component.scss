@@ -1,0 +1,53 @@
+.s-contact {
+    li {
+        margin: 10px 0;
+    }
+    i {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+}
+
+
+.form-wrap {
+    .alert {
+        padding: 0;
+        font-size: 11px;
+        color: red;
+    }
+    .form-group {
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        .color-element {
+            font-weight: 600;
+        }
+        input, textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            line-height: 40px;
+            text-indent: 12px;
+            background-color: transparent;
+        }
+    }
+    button {
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        line-height: 40px;
+        padding: 0 25px;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 10px;
+        float: right;
+    }
+    button:disabled {
+        opacity: .6;
+    }
+}
+
+
+
